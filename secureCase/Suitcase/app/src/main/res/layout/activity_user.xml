@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserAct">
+
+    <TextView
+        android:id="@+id/actlog_tv"
+        android:layout_width="383dp"
+        android:layout_height="64dp"
+        android:fontFamily="casual"
+        android:text="Activity Log"
+        android:textColor="#2898AF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <TextView
+        android:id="@+id/dateLA_tv"
+        android:layout_width="216dp"
+        android:layout_height="45dp"
+        android:text="Date of my last activity:"
+        android:textColor="#2898AF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actlog_tv"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/actlog_rv"
+        android:layout_width="318dp"
+        android:layout_height="523dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateLA_tv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
